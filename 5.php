@@ -24,8 +24,19 @@
 	Step 3:  Use a pre-built Array function here and echo it
 
  */
+echo floor(rand(0, 1)) . "<br>";
 
-	
+$string = "I love Jesus";
+echo strtoupper($string) . "<br>";
+
+$myArray = [43, 435, 223, 235, 923, $string];
+
+$found = in_array($string, $myArray);
+if($found) {
+	echo "Wow";
+} else {
+	echo "Oh no";
+}
 ?>
 
 
